@@ -1,0 +1,76 @@
+body {
+  @apply bg-background;
+  @apply text-content;
+}
+
+main {
+  @apply bg-background;
+  @apply text-content;
+}
+
+* {
+  @apply bg-background;
+  @apply text-content;
+}
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --accent: 138 43 226;
+    --content: 0 0 0;
+    --background: 230 230 230;
+    --foreground: 245 245 245;
+    --edge: 200 200 200;
+    --gray: 245 245 245;
+    --orange: 0 0 0;
+  }
+}
+
+.theme-dark {
+  --accent: 138 43 226;
+  --content: 255 255 255;
+  --background: 35 35 40;
+  --foreground: 0 0 0;
+  --edge: 59 130 246;
+  --gray: 40 40 40;
+  --orange: 0 0 0;
+}
+
+.theme-custom {
+  --accent: 255 41 167;
+  --content: 41 75 255;
+  --background: 209 255 253;
+  --foreground: 137 141 84;
+  --edge: 254 0 138;
+  --gray: 254 0 138;
+  --orange: 254 0 138;
+}
+
+.scroll {
+  scroll-behavior: smooth;
+}
+
+.shado {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.dot {
+  height: 40px;
+  width: 40px;
+  background-color: rgb(145, 67, 255);
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.sidenav {
+  transition: 0.5s;
+}
+
+.sidenav a {
+  transition: 0.3s;
+
+}
